@@ -109,7 +109,8 @@ body {
    position: relative;
    box-sizing: border-box;
    width: 100%;
-   padding: 120px 67px 185px 67px;
+   /* padding: 120px 67px 185px 67px; */
+   padding: 120px 67px 0 67px;
  }
 
  .description {
@@ -148,9 +149,10 @@ body {
    align-items: flex-start;
    flex-wrap: wrap;
    /*width: 100%;*/
-   position: absolute;
+   /* position: absolute; */
+   position: relative;
    box-sizing: border-box;
-   bottom:-130px;
+   bottom: -130px;
 }
 
 .navigetion-block {
