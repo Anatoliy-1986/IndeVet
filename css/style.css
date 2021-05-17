@@ -109,7 +109,8 @@ body {
    position: relative;
    box-sizing: border-box;
    width: 100%;
-   padding: 120px 67px 185px 67px;
+   /*padding: 120px 67px 185px 67px;*/
+   padding: 120px 67px 0 67px;
  }
 
  .description {
@@ -148,10 +149,28 @@ body {
    align-items: flex-start;
    flex-wrap: wrap;
    /*width: 100%;*/
-   position: absolute;
+   position: relative;
    box-sizing: border-box;
-   bottom:-130px;
+   bottom: -130px;
 }
+
+.navigetion a {
+   text-decoration: none;
+}
+
+.navigetion a:hover {
+   border-color:#284854;
+   transition: 0.1s lenear, color .1s linear;
+ }
+ 
+ .navigetion a:active {
+   color: yellow;
+ }
+
+ .navigetion a:first-child {
+   margin-right: 83px;
+   margin-bottom: 15px;
+ }
 
 .navigetion-block {
    display: flex;
@@ -161,9 +180,9 @@ body {
    background: #F4F6F0;
 }
 
-.navigetion-block.link {
-   margin-left: 83px;
-}
+/*.navigetion-block.link {
+   margin-right: 83px;
+}*/
 
 .lines {
    display: flex;
@@ -179,7 +198,7 @@ body {
    margin:0 40px 0 30px;
 }
 
-.line-title a {
+.line-title /*a*/ {
    font-family: "Roboto Condensed", sans-serif;
    font-weight: 400;
    font-size: 37px;
@@ -187,35 +206,32 @@ body {
    color:#8BC441;
 }
 
-.line-title a:hover {
+/*.line-title a:hover {
    color:#284854;
    transition: 0.1s lenear, color .1s linear;
  }
  
  .line-title a:active {
    color: yellow;
- }
+ }*/
 
 .line-subtitle {
    width: 75%;
    margin-top: 10px;
-}
-
-.line-subtitle a {
    font-weight: 400;
    font-size: 20px;
    text-decoration: none;
    color:#60C1BD;
 }
 
-.line-subtitle a:hover {
+/*.line-subtitle a:hover {
    color:#284854;
    transition: 0.1s lenear, color .1s linear;
  }
  
  .line-subtitle a:active {
    color: yellow;
- }
+ }*/
 
  /*about*/
 
@@ -433,21 +449,13 @@ footer {
    max-width: 540px;
  }
 
-.footer-sub-block:nth-child(2) {
-   margin-left: 138px;
-}
-
 .footer-block .contact {
-   margin-left: 97px;
+   margin-right: 138px;
 }
 
-/*.footer-block:nth-child(2) {
-   flex-wrap: nowrap;
-}*/
-
-.footer-block img {
+.footer-sub-block img {
    margin-top: 20px;
-  
+   margin-right: 97px;
 }
 
 .footer-title a {
