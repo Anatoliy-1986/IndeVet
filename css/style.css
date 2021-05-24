@@ -39,6 +39,10 @@ body {
    padding: 0 67px 0 32px;
 }
 
+.nav.red {
+   background-color: violet;
+}
+
 .heading {
    display: flex;
    align-items: center;
@@ -439,23 +443,33 @@ footer {
 .footer-blocks {
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
+   
    padding: 120px 80px 0px 34px;
    margin: 0;
+   position: relative;
  }
 
 .footer-block {
    display: flex;
    flex-wrap: wrap;
-   max-width: 540px;
+   flex-direction: column;
+   margin-bottom: 25px;
+   position: relative;
+   box-sizing: border-box;
+   min-width: 230px;
+   
+   /*margin-right: 100px;*/
  }
 
-.footer-block .contact {
+/*.footer-block.contact {
    margin-right: 138px;
-}
+}*/
 
-.footer-sub-block img {
-   margin-top: 20px;
-   margin-right: 97px;
+.footer-block img {
+   position: absolute;
+   top: 20px;
+   /*margin-right: 97px;*/
 }
 
 .footer-title a {
